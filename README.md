@@ -3,7 +3,8 @@
 Link: https://react-todolist-b0ee1.web.app/
 
 Simple web app created using React.  
-Data is stored in firebase and app is also running there.
+Data is stored in firebase and app is also running there.  
+There are some animations which can be looked directy on the site. 
 
 ### Profile page ###
 ![Image alt](https://github.com/grok21/React-Todolist/raw/master/Home.png)  
