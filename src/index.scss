@@ -1,0 +1,74 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+
+  strong {
+    margin-right: 1rem;
+  }
+}
+
+.input-note {
+  margin-top: 2rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.alerts-enter {
+  opacity: 0;
+}
+
+.alerts-enter-active {
+  transition: opacity 500ms ease-out;
+  opacity: 1;
+}
+
+.alerts-exit-active {
+  transition: opacity 350ms ease-out;
+  opacity: 1;
+}
+
+.note-exit-active {
+  animation: note 1s ease-out forwards;
+}
+
+.note-enter-active {
+  animation: note 1s ease-in alternate-reverse;
+}
+
+@keyframes note {
+  0% {
+    transform: translateX(0);
+  }
+
+  30% {
+    opacity: .7;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
